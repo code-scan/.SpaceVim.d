@@ -1,0 +1,119 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "iceberg"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true 
+    autocomplete_method="asyncomplete"
+    filetree_direction = 'left'
+    filemanager = 'nerdtree'
+    sidebar_width=30 # file tree width
+    enable_vimfiler_filetypeicon = true
+    snippet_engine = "ultisnips"
+    default_indent = 4
+    bootstrap_before = "myspacevim#before"
+    bootstrap_after  = "myspacevim#after"
+    custom_color_palette = [
+        ["#161821", "#bbbdc7", 246, 235],
+        ["#bbbdc7", "#161821", 239, 246],
+        ["#bbbdc7", "#161821", 237, 246],
+        ["#161821", 241],
+        ["#161821", "#84a0c6", 235, 109],
+        ["#161821", "#b4be82", 235, 208],
+        ["#161821", "#818596", 235, 108],
+        ["#161821", "#e2a478", 235, 72],
+        ["#161821", "#0f1117", 235, 132],
+    ]
+  #colorscheme="solarized"
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'bottom'
+default_height = 20
+
+[[layers]]
+name="lang#go"
+
+[[layers]]
+name="lang#vue"
+
+[[layers]]
+name="format"
+
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = "tools#dash"
+
+[[layers]]
+name = "fzf"
+
+[[layers]]
+name="lsp"
+filetyps=[
+  "gopls"
+]
+
+
+
+[[layers]]
+name = "colorscheme"
+
+[[custom_plugins]]
+repo="ryanoasis/vim-devicons"
+
+[[custom_plugins]]
+repo="kristijanhusak/defx-icons"
+
+[[custom_plugins]]
+repo="neovim/nvim-lspconfig"
+
+[[custom_plugins]]
+repo="ray-x/lsp_signature.nvim"
+
+[[custom_plugins]]
+repo="cocopon/iceberg.vim"
+
+[[custom_plugins]]
+repo="cocopon/pgmnt.vim"
+
+[[custom_plugins]]
+repo="jacoborus/tender.vim"
+
+[[custom_plugins]]
+repo="lifepillar/vim-solarized8"
+
+[[custom_plugins]]
+repo="mg979/vim-visual-multi"
+
+
+[[custom_plugins]]
+repo="kdheepak/lazygit.nvim"
