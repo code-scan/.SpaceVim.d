@@ -23,28 +23,43 @@ vim:
 | Leader | \        |
 | SPC    | 空格键         |
 
-| 快捷键          | 指令               |
-| --------------- | ------------------ |
-| Leader + 数字   | 跳转到不同的tab    |
-| SPC + 数字      | 跳转到不同的window |
-| SPC b f         | 格式化代码         |
-| SPC f v d       | 打开配置文件       |
-| SPC l g         | 跳转到函数定义     |
-| SPC l x         | 查看引用           |
-| SPC b d         | 关闭当前buff       |
-| SPC f t         | 顯示、隱藏文件樹   |
-| SPC f f         | 打开fzf搜索窗口    |
-| SPC f o         | 打开当前文件所在文件夹位置| 
-| SPC s r p       | rg全局搜索内容     |
-| SPC s j/J       | 全局搜索内容       |
-| SPC l k/K       | 给结构体加/取消json |
-| Ctrl-Shift-Up   | 向上移动当前行     |
-| Ctrl-Shift-Down | 向下移动当前行     |
-| F3              | 隐藏tabbar         |
-| sg              | 文件树中左右分割展示 |
-| sv              | 文件树中上下分割展示 |
-| ctrl+r          | 文件树中刷新文件列表 |
-| N               | 文件树中当前位置新建文件|
+| 快捷键          | 指令                              |
+| --------------- | --------------------------------- |
+| Leader + 数字   | 跳转到不同的tab                   |
+| SPC + 数字      | 跳转到不同的window                |
+| SPC b f         | 格式化代码                        |
+| SPC f v d       | 打开配置文件                      |
+| SPC l g         | 跳转到函数定义                    |
+| SPC l x         | 查看引用                          |
+| SPC b d         | 关闭当前buff                      |
+| SPC f t         | 顯示、隱藏文件樹                  |
+| SPC f f         | 打开fzf搜索窗口                   |
+| SPC f o         | 打开当前文件所在文件夹位置        |
+| SPC s r p       | rg全局搜索内容                    |
+| SPC s j/J       | 全局搜索内容                      |
+| SPC l k/K       | 给结构体加/取消json               |
+| Ctrl-Shift-Up   | 向上移动当前行                    |
+| Ctrl-Shift-Down | 向下移动当前行                    |
+| F3              | 隐藏tabbar                        |
+| sg              | 文件树中左右分割展示              |
+| sv              | 文件树中上下分割展示              |
+| ctrl+r          | 文件树中刷新文件列表              |
+| N               | 文件树中当前位置新建文件          |
+| Leader + y      | 复制到系统剪切板                  |
+| Leader + p      | 从系统剪切板粘贴                  |
+| SPC +s+e        | 多光标同样的单词                  |
+| SPC+'           | 打开shell                         |
+| SPC + c +l      | 注释/反注释选中的内容或当前行     |
+| SPC+c+t/T       | t向上注释N行，T向下注释N行        |
+| SPC+s+c         | 清除高亮和:noh一样                |
+| SPC+t+t         | 打开tab列表，这时候按n可以新建tab |
+| SPC+w+F         | 打开新tab, equal to `spc t t + n` |
+| spc+w+o         | 切换tab                           |
+| spc s s         | 当前文件搜索                      |
+| spc s d         | 当前目录搜索                      |
+| spc s b         | 所有打开的buffer搜索              |
+| spc s p         | 当前buff和直接输入 /效果一样      |
+| Ctrl +o/i       | 跳转到上一个/下一个位置                                  |
 
 | 快捷键 | 含义                           |
 | ------ | ------------------------------ |
@@ -65,6 +80,7 @@ vim:
 | daw    | 删除当前单词                   |
 | diw    | 删除当前单词并包含最后一个空格 |
 | :noh   | 取消搜索高亮                   |
-| y      | v模式下复制                    |	
-| Leader + y| 复制到系统剪切板            |
+| y      | v模式下复制                    |
+| x/c    | v模式下剪切                    |
+| p      | 粘贴                               |
 
