@@ -117,3 +117,13 @@ repo="mg979/vim-visual-multi"
 
 [[custom_plugins]]
 repo="kdheepak/lazygit.nvim"
+
+
+[[custom_plugins]]
+repo="neovim/nvim-lspconfig"
+
+[[custom_plugins]]
+repo="ray-x/guihua.lua"
+
+[[custom_plugins]]
+repo="ray-x/navigator.lua"
