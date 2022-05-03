@@ -17,6 +17,10 @@ function! myspacevim#before() abort
     :set ignorecase
     :set smartcase 
     let g:go_gopls_matcher = 'fuzzy'
+    " let g:go_gopls_options=['-remote=auto','-ignore-case']
+    call SpaceVim#custom#SPC('nmap',['a','g'],':LazyGit','LazyGit',1)
+    call SpaceVim#custom#SPC('nnoremap', ['f', 't'], 'echom "hello world"', 'test custom SPC', 1)
+
 endfunction
 function! myspacevim#after() abort
     lua << EOF
@@ -26,11 +30,13 @@ function! myspacevim#after() abort
           bind = true, 
           handler_opts = {
             border = "single"
-          }
+          },
+          zindex=30
         }, bufnr)
       end,
     }
-    require'navigator'.setup()
+    -- require('go').setup()
+    -- require'navigator'.setup()
     require'lspconfig'.gopls.setup(golang_setup)
 EOF
     call iceberg#palette#dark#create()

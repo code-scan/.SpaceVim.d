@@ -58,9 +58,20 @@ default_height = 20
 
 [[layers]]
 name="lang#go"
+go_file_head=[]
 
 [[layers]]
 name="lang#vue"
+#
+# [[layers]]
+# name="lang#python"
+#
+[[layers]]
+name="lang#javascript"
+
+
+[[layers]]
+name = "lang#html"
 
 [[layers]]
 name="format"
@@ -86,6 +97,8 @@ filetyps=[
 
 [[layers]]
 name = "colorscheme"
+
+
 
 [[custom_plugins]]
 repo="ryanoasis/vim-devicons"
@@ -119,11 +132,23 @@ repo="mg979/vim-visual-multi"
 repo="kdheepak/lazygit.nvim"
 
 
+
 [[custom_plugins]]
 repo="neovim/nvim-lspconfig"
 
 [[custom_plugins]]
-repo="ray-x/guihua.lua"
+repo="wellle/targets.vim"
+
 
 [[custom_plugins]]
-repo="ray-x/navigator.lua"
+repo="github/copilot.vim"
+
+#
+# [[custom_plugins]]
+# repo="ray-x/guihua.lua"
+#
+# [[custom_plugins]]
+# repo="ray-x/navigator.lua"
+#
+# [[custom_plugins]]
+# repo="nvim-treesitter/nvim-treesitter"
