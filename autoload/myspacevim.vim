@@ -38,6 +38,7 @@ function! myspacevim#after() abort
     -- require('go').setup()
     -- require'navigator'.setup()
     require'lspconfig'.gopls.setup(golang_setup)
+    require("bookmarks").setup()
 EOF
     call iceberg#palette#dark#create()
 endfunction
