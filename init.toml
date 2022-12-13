@@ -139,10 +139,33 @@ repo="neovim/nvim-lspconfig"
 [[custom_plugins]]
 repo="wellle/targets.vim"
 
+[[custom_plugins]]
+repo="kyazdani42/nvim-web-devicons"
 
 [[custom_plugins]]
-repo="github/copilot.vim"
+repo="crusj/bookmarks.nvim"
 
+[[custom_plugins]]
+repo="nvim-lua/plenary.nvim"
+
+[[custom_plugins]]
+repo="nvim-telescope/telescope.nvim"
+
+[[custom_plugins]]
+repo="kkharji/sqlite.lua"
+
+[[custom_plugins]]
+repo="stevearc/dressing.nvim"
+
+[[custom_plugins]]
+repo="mrjones2014/legendary.nvim"
+
+
+# [[custom_plugins]]
+# repo="gen740/SmoothCursor.nvim"
+# [[custom_plugins]]
+# repo="github/copilot.vim"
+#
 #
 # [[custom_plugins]]
 # repo="ray-x/guihua.lua"
